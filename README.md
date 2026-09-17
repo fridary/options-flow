@@ -1791,19 +1791,20 @@ The table reports screening importance for the target that later used 1,000 sele
 The opening chart applies a single position ES simulation to one extrema configuration across 328 trading days. Position size is fixed at one ES contract and never compounds.
 
 
-| Metric                       | Result           |
-| ---------------------------- | ---------------- |
-| Reference capital            | $100,000         |
-| Contract size                | one ES contract  |
-| Point value                  | $50 per ES point |
-| Net PnL                      | $47,933          |
-| Return on reference capital  | 47.93 percent    |
-| Daily Sharpe ratio           | 2.63             |
-| Closed daily equity drawdown | 5.07 percent     |
-| Trades                       | 62               |
-| Traded days                  | 41               |
-| Win rate                     | 67.7 percent     |
-| Profit factor                | 2.69             |
+| Metric                       | Result                                      |
+| ---------------------------- | ------------------------------------------- |
+| Reference capital            | $100,000 reporting denominator              |
+| Contract size                | one ES futures contract                     |
+| Approximate notional         | ES price x $50, varying with the ES level   |
+| Point value                  | $50 per ES point                            |
+| Net PnL                      | $47,933                                     |
+| Return on reference capital  | 47.93 percent                               |
+| Daily Sharpe ratio           | 2.63                                        |
+| Closed daily equity drawdown | 5.07 percent                                |
+| Trades                       | 62                                          |
+| Traded days                  | 41                                          |
+| Win rate                     | 67.7 percent                                |
+| Profit factor                | 2.69                                        |
 
 
 The period decomposition was:
@@ -1816,7 +1817,7 @@ The period decomposition was:
 | Later replay | 146  | 22     | $13,150 | 13.15 percent |
 
 
-The reference capital is a reporting denominator. Return is arithmetic dollar PnL divided by $100,000. It is not a compounded portfolio return and does not establish recommended capitalization, futures margin sufficiency, or acceptable risk.
+The reference capital is a reporting denominator. It is not the futures notional value, a recommended account size, or a margin requirement. One ES contract has notional exposure equal to ES price multiplied by $50, while actual margin requirements and acceptable capital depend on broker rules, exchange requirements, volatility, and risk limits. Return is arithmetic dollar PnL divided by $100,000 and is not a compounded portfolio return.
 
 The execution policy uses asymmetric long and short model logic. A model signal must pass a causal three bar price confirmation. The order fills at the next available bar open under the simulator rules. The configuration uses one tick of adverse slippage per side, $2.50 commission per side, a 0.013 percent round trip cost floor, a three bar opposite pivot exit, a three bar cooldown, and at most one open position.
 
