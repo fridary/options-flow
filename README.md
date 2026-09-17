@@ -1786,6 +1786,8 @@ The table reports screening importance for the target that later used 1,000 sele
 
 > A prediction becomes a trade only after entry confirmation, position state, exit logic, costs, and exposure constraints are defined.
 
+![ES extrema strategy research simulation](assets/es-extrema-equity.png)
+
 The opening chart applies a single position ES simulation to one extrema configuration across 328 trading days. Position size is fixed at one ES contract and never compounds.
 
 
