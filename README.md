@@ -2298,9 +2298,7 @@ This is an important conclusion for my work as both a researcher and trader. The
 
 ## Falsifiability
 
-> A market hypothesis is useful only when I can describe evidence that would make me abandon it.
-
-The central thesis would be weakened if any of the following occurs under a frozen evaluation:
+A market hypothesis is useful only when I can describe evidence that would make me abandon it. The central thesis would be weakened if any of the following occurs under a frozen evaluation:
 
 1. PR lift approaches one after uncertainty is measured by complete day or causal episode.
 2. Ranking disappears after conditioning on simpler futures, volatility, and time of day baselines.
@@ -2317,7 +2315,7 @@ I treat diagnostic results as part of the research record. Rolling calibration d
 
 ## Limitations
 
-> I prefer to state what an experiment does not prove. Hidden assumptions are more dangerous than an imperfect result.
+I prefer to state what an experiment does not prove. Hidden assumptions are more dangerous than an imperfect result.
 
 1. ZigZag pivot positions are retrospective and are confirmed after a later reversal.
 2. The extrema models predict the probability of a future retrospective pivot, not the exact real time confirmation moment.
@@ -2353,12 +2351,8 @@ I treat diagnostic results as part of the research record. Rolling calibration d
 
 ## Repository Scope
 
-> The public repository documents the research process and selected aggregate evidence while protecting proprietary implementation and licensed market data.
-
 The production source code, raw market data, trained model files, execution logic, and complete feature dictionary are not included. The repository contains only this research description and sanitized visual material.
 
 ## Disclaimer
-
-> Financial research should communicate uncertainty as clearly as it communicates performance.
 
 This repository is provided for research and educational purposes. It is not investment advice, a solicitation, or a recommendation to trade futures, options, or any other financial instrument. Historical simulations are hypothetical and involve assumptions about data quality, transaction costs, fills, and market impact. Actual results can differ materially.
